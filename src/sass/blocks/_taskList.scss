@@ -1,0 +1,119 @@
+.task-list {
+
+    .task-list__item {
+        position:relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px 40px 40px;
+        background-color: #FCF1DB;
+        box-shadow: 5px 5px 15px 2px black;
+        border-radius: 10px;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+    }
+    .complete-checkbox {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        bottom: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border: 2px solid black;
+        padding: 2px 1px 1px 2px;
+        border-radius: 2px;
+        &__img {
+            width: 14px;
+            height: 14px;
+        }
+    }
+    .timer {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        bottom: 5px;
+        right: 5px;
+        color:rgba(0, 0, 0, 0.422);
+        .timer__text {
+            // color: red;
+            padding: 0 5px 0 0;
+        }
+    }
+    .timer__item {
+        margin: 0 10px 0 0;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .timer__item:nth-child(3) {
+        margin: 0;
+    }
+    .task-list__item-text {
+        width: 70%;
+        padding: 2px 5px;
+        outline: none;
+        word-wrap: break-word;
+    }
+    .task-list__item-deadline {
+        position: absolute;
+        bottom: 5px;
+        font-weight: 500;
+        font-size: 15px;
+        color:rgba(0, 0, 0, 0.422);
+    }
+    .timer__missed-deadline {
+        color:#f42824;
+        font-weight: 900;
+        letter-spacing: 1.25px;
+        margin: 0 20px 0 0;
+    }
+    .task-list__item-arrow {
+        position: absolute;
+        bottom: -5px;
+        right: -55px;
+    }
+    .task-list__item-completed {
+        position: absolute;
+        bottom: 5px;
+        font-weight: 500;
+        font-size: 15px;
+        color:#009451;  
+    }
+    .task-list__item-text--completed {
+        text-decoration: line-through;
+    }
+    .task-deadline {
+        padding: 0 5px 0 5px;
+    }
+    .distinct {
+        color: black;
+        font-size: 18px;
+        font-weight: 900;
+
+    }
+    .task-list__item-btn {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        margin: 0 20px 0 0;
+    }
+    .task-list__item-btn:last-child {
+        margin: 0;
+    }
+    .task-list__item-btn:hover {
+        transform: scale(1.1);
+    }
+
+    .edit {
+        width: 25px;
+        height: 25px;
+    }
+    .hide {
+        display: none;
+    }
+    
+}
